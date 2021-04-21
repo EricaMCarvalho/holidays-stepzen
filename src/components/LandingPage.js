@@ -5,10 +5,10 @@ export default function LandingPage() {
       <section className="d-flex flex-column justify-content-center align-items-center vh-100">
         <h1 className="display-4 text-center mb-3">Not sure about which Holiday is when? We can Help!</h1>
         <div className="d-flex justify-content-center ">
-          <Link class="btn btn-primary btn-lg mr-3" to="/holidays" role="button">
+          <Link className="btn btn-primary btn-lg mr-3" to="/holidays" role="button">
             Get Holiday List
           </Link>
-          <a class="btn btn-outline-primary btn-lg" href="#how-it-works" role="button">
+          <a className="btn btn-outline-primary btn-lg" href="#how-it-works" role="button">
             How it Works
           </a>
         </div>
