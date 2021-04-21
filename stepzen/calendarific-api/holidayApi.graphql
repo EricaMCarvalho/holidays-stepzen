@@ -1,0 +1,26 @@
+type Country {
+  id: ID
+  name: String
+}
+
+type Holiday {
+  name: String
+  date: String
+  desc: String
+  country: String
+}
+
+type Query {
+  holidays(country: String!): [Holiday]
+    @rest(
+      resultroot: "response.holidays[]"
+      setters: [
+        { field: "name", path: "name" }
+        { field: "date", path: "date.iso" }
+        { field: "desc", path: "description" }
+        { field: "country", path: "country.name" }
+      ]
+      endpoint: "https://calendarific.com/api/v2/holidays?api_key=$apikey&country=$country&year=$2021"
+      configuration: "test"
+    )
+}
