@@ -1,4 +1,10 @@
 import { Link } from 'react-router-dom';
+
+import logoReact from '../images/reactjs-ar21.svg';
+import logoNode from '../images/nodejs-horizontal.svg';
+import img1 from '../images/1588952743049.jpeg';
+import img2 from '../images/linkedIN.png';
+
 export default function LandingPage() {
   return (
     <>
@@ -20,6 +26,41 @@ export default function LandingPage() {
           query for Data as if it was queried from a GraphQL API.
         </h4>
       </section>
+      <section className="vh-100 container">
+        <h1 className="text-center mb-3">Technologies Used</h1>
+        <div className="d-flex w-75 justify-content-center align-items-center">
+          <img src={logoReact} alt="react" className="w-100" />
+          <img src={logoNode} alt="react" className="w-100" />
+        </div>
+      </section>
+      <section className="vh-100 container">
+        <h1 className="text-center mb-3">Meet The Engineers</h1>
+        <div className="d-flex justify-content-around align-items-center mt-4">
+          <div className="card" style={{ width: '18rem' }}>
+            <img src={img1} alt="" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Erica Melo de Carvalho</h5>
+              <p className="card-text">I like pizza and javascript. Give me a job so I can buy more pizza.</p>
+              <a href="" className="btn btn-primary">
+                Go Some Where
+              </a>
+            </div>
+          </div>
+          <div className="card" style={{ width: '18rem' }}>
+            <img src={img2} alt="" className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">Aamir Bakhtiar</h5>
+              <p className="card-text">Likes Programming and Peanuts, and is all out of Peanuts.</p>
+              <a href="" className="btn btn-primary">
+                Go Some Where
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer className="container mt-5">
+        <p className="small text-center">Erica Melo de Carvalho and Aamir Bakhtiar | 2021</p>
+      </footer>
     </>
   );
 }
