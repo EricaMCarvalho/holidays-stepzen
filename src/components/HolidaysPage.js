@@ -1,8 +1,9 @@
-import Country from './Country';
 import publicIp from 'public-ip';
 import { useState, useEffect } from 'react';
 
-export default function HomePage() {
+import Country from './Country';
+
+export default function HolidaysPage() {
   const [ipAddress, setIp] = useState('');
 
   useEffect(() => {
@@ -16,11 +17,9 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className='container mt-5'>
+    <div className="container mt-5">
       <Country ip={ipAddress} />
-      <p className='small text-center'>
-        Erica Melo de Carvalho and Aamir Bakhtiar | 2021
-      </p>
+      <p className="small text-center">Erica Melo de Carvalho and Aamir Bakhtiar | 2021</p>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useQuery } from '@apollo/react-hooks';
-import { GET_COUNTRY_QUERY } from './queries/getCountry.js';
+import { GET_COUNTRY_QUERY } from '../queries/getCountry';
 import Holidays from './Holidays';
 
 export default function Country({ ip }) {
@@ -23,9 +23,7 @@ export default function Country({ ip }) {
   if (holidays) {
     return (
       <div>
-        <h2 className='text-center mb-3'>
-          Your holidays in 2021 in {holidays[0].country}
-        </h2>
+        <h2 className="text-center mb-3">Your holidays in 2021 in {holidays[0].country}</h2>
         <Holidays holidays={holidays} />
       </div>
     );
