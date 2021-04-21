@@ -22,7 +22,7 @@ export default function NavBar() {
           <ul className="navbar-nav">
             <li className="nav-item active">
               <Link className="nav-link" to="/">
-                Home <span class="sr-only">(current)</span>
+                Home <span className="sr-only">(current)</span>
               </Link>
             </li>
             <li className="nav-item">
