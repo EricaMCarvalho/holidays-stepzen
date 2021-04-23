@@ -1,4 +1,4 @@
-# holidays-stepzen
+# Holidays Finder
 
 [Holidays App](https://safe-woodland-26854.herokuapp.com/)
 
